@@ -1,4 +1,4 @@
-import {useState, UseEffect, useEffect} from "react";
+import {useState, useEffect} from "react";
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 import {useSpring, animated}from 'react-spring';
 

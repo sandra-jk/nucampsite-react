@@ -1,10 +1,11 @@
 import { Col, Row, } from 'reactstrap';
 import CampsiteCard from "./CampsiteCard";
 import { selectAllCampsites } from './campsitesSlice';
+import { useSelector } from 'react-redux';
 
 
 const CampsitesList = () => {
-    const campsites = selectAllCampsites();
+    const campsites = useSelector(selectAllCampsites);//passing the function without invoking it
     return (
         <Row className='ms-auto'>
             {campsites.map((campsite) => {
